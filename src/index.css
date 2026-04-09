@@ -560,3 +560,382 @@ body {
     flex-direction: column;
   }
 }
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.glow-card {
+  box-shadow: 0 0 30px rgba(87, 217, 136, 0.12);
+}
+
+.premium-topbar {
+  align-items: center;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mini-status-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(114, 255, 167, 0.08);
+  border: 1px solid rgba(114, 255, 167, 0.16);
+  color: #a4f6c4;
+  font-weight: 600;
+}
+
+.premium-stats-grid {
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+}
+
+.premium-dashboard-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.glass-highlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(157, 247, 192, 0.08),
+    rgba(87, 217, 136, 0.02)
+  );
+  pointer-events: none;
+}
+
+.stat-icon-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 12px;
+  background: rgba(114, 255, 167, 0.1);
+  color: #9df7c0;
+  border: 1px solid rgba(114, 255, 167, 0.12);
+}
+
+.chart-panel,
+.ai-panel,
+.table-panel {
+  min-height: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.section-header h3 {
+  margin: 0;
+}
+
+.section-header p {
+  margin: 6px 0 0;
+  color: #9eb9a9;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(114, 255, 167, 0.1);
+  color: #d7ece0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.green-chip {
+  background: rgba(114, 255, 167, 0.08);
+  color: #a4f6c4;
+}
+
+.ai-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ai-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(114, 255, 167, 0.08);
+  color: #dcefe2;
+}
+
+.ai-list-item svg {
+  color: #9df7c0;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.glow-card {
+  box-shadow: 0 0 30px rgba(87, 217, 136, 0.12);
+}
+
+@media (max-width: 1200px) {
+  .premium-stats-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 1100px) {
+  .premium-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .premium-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+  }
+
+  .topbar-actions {
+    width: 100%;
+  }
+}
+
+.premium-topbar {
+  align-items: center;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mini-status-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(114, 255, 167, 0.08);
+  border: 1px solid rgba(114, 255, 167, 0.16);
+  color: #a4f6c4;
+  font-weight: 600;
+}
+
+.premium-stats-grid {
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+}
+
+.premium-dashboard-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.glass-highlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(157, 247, 192, 0.08),
+    rgba(87, 217, 136, 0.02)
+  );
+  pointer-events: none;
+}
+
+.stat-icon-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 12px;
+  background: rgba(114, 255, 167, 0.1);
+  color: #9df7c0;
+  border: 1px solid rgba(114, 255, 167, 0.12);
+}
+
+.chart-panel,
+.ai-panel,
+.table-panel {
+  min-height: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.section-header h3 {
+  margin: 0;
+}
+
+.section-header p {
+  margin: 6px 0 0;
+  color: #9eb9a9;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(114, 255, 167, 0.1);
+  color: #d7ece0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.green-chip {
+  background: rgba(114, 255, 167, 0.08);
+  color: #a4f6c4;
+}
+
+.ai-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ai-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(114, 255, 167, 0.08);
+  color: #dcefe2;
+}
+
+.ai-list-item svg {
+  color: #9df7c0;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.glow-card {
+  box-shadow: 0 0 30px rgba(87, 217, 136, 0.12);
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+  .premium-stats-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 1100px) {
+  .premium-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .premium-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+  }
+
+  .topbar-actions {
+    width: 100%;
+  }
+}
+.fraud-alert-wrap {
+  margin-bottom: 20px;
+}
+
+.fraud-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
+}
+
+.fraud-low {
+  background: rgba(114, 255, 167, 0.08);
+  color: #9df7c0;
+  border-color: rgba(114, 255, 167, 0.18);
+}
+
+.fraud-medium {
+  background: rgba(255, 214, 102, 0.1);
+  color: #ffd666;
+  border-color: rgba(255, 214, 102, 0.22);
+}
+
+.fraud-high {
+  background: rgba(255, 99, 99, 0.12);
+  color: #ff9b9b;
+  border-color: rgba(255, 99, 99, 0.24);
+}
+
+.fraud-warning-card {
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 99, 99, 0.2);
+  background: rgba(255, 99, 99, 0.05);
+}
+
+.fraud-warning-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.fraud-warning-header h3 {
+  margin: 0;
+}
